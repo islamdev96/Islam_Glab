@@ -37,7 +37,6 @@ dependencies:
     sdk: flutter
   
   flutter_svg: 
-  font_awesome_flutter: ^10.1.0
   google_fonts: ^3.0.1
   rename: ^2.0.1
   responsive_builder: null
@@ -89,10 +88,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Tangerine
-  #     fonts:
-  #       - asset: assets/fonts/England.otf
+  fonts:
+    - family: RubikMicrobe
+      fonts:
+        - asset: assets/fonts/RubikMicrobe-Regular.ttf
   #       - asset: assets/fonts/Tangerine.ttf
   #         style: italic
   #   - family: Trajan Pro

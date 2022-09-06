@@ -25,12 +25,9 @@ class HomeMobile extends StatelessWidget {
                     radius: MediaQuery.of(context).size.width * 0.4,
                     child: CircleAvatar(
                       backgroundColor: Colors.white,
-
                       radius: MediaQuery.of(context).size.width * 0.3,
                       backgroundImage:
                           const AssetImage('assets/images/islam3.jpg'),
-
-                      // SvgPicture.asset('assets/images/islam11.svg'),
                     ),
                   ),
                 ),
