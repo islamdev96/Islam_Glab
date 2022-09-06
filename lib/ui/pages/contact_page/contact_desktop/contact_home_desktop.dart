@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import
+// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import, avoid_unnecessary_containers
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +25,7 @@ class ContactHomeDesktop extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.2,
             ),
-            titleHeder(),
+            const titleHeder(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
               child: AutoSizeText(

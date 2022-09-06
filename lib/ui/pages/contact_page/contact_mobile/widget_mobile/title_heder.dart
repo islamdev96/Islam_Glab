@@ -1,6 +1,6 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class titleHederMobile extends StatelessWidget {

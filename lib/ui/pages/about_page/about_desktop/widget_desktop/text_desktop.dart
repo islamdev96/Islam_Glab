@@ -9,9 +9,7 @@ class textDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
-
-    return Container(
+    return SizedBox(
       height: MediaQuery.of(context).size.height * 0.5,
       width: MediaQuery.of(context).size.width * 0.5,
       child: AutoSizeText(

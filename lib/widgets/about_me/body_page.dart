@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../ui/shared/Sized_box_respo.dart';
 import '../about_me/build_experience.dart';
@@ -11,8 +10,6 @@ class BodyPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
-
     return Column(
       children: [
         const SizedBoxRespo(
@@ -58,7 +55,7 @@ class BodyPage extends StatelessWidget {
           tablet: 0.05,
           else1: 0.05,
         ),
-        SkillsAboutWidget(),
+        const SkillsAboutWidget(),
         const SizedBoxRespo(
           mobile: 0.4,
           desktop: 0.3,

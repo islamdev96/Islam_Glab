@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../../widgets/card_text.dart';
 
@@ -8,7 +7,6 @@ class BodyTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
     return Container(
       child: Column(
         children: [

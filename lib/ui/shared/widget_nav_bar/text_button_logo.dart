@@ -16,7 +16,7 @@ class TextButtonLogo extends StatelessWidget {
       },
       icon: Icon(
         Icons.auto_stories,
-        color: Color(0xFFF66C0A),
+        color: const Color(0xFFF66C0A),
         size: deviceType == DeviceScreenType.mobile
             ? MediaQuery.of(context).size.width * 0.07
             : deviceType == DeviceScreenType.desktop
@@ -28,7 +28,7 @@ class TextButtonLogo extends StatelessWidget {
       label: Text(
         'ISLAM SAYED',
         style: TextStyle(
-          color: Color(0xFFF66C0A),
+          color: const Color(0xFFF66C0A),
           fontSize: deviceType == DeviceScreenType.mobile
               ? MediaQuery.of(context).size.width * 0.055
               : deviceType == DeviceScreenType.desktop

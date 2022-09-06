@@ -15,13 +15,6 @@ class CardText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Container(
-          // height: deviceType == DeviceScreenType.mobile
-          //     ? MediaQuery.of(context).size.height * 0.3
-          //     : deviceType == DeviceScreenType.desktop
-          //         ? MediaQuery.of(context).size.height * 0.35
-          //         : deviceType == DeviceScreenType.tablet
-          //             ? MediaQuery.of(context).size.height * 0.5
-          //             : MediaQuery.of(context).size.height * 1,
           width: deviceType == DeviceScreenType.mobile
               ? MediaQuery.of(context).size.width * 1
               : deviceType == DeviceScreenType.desktop

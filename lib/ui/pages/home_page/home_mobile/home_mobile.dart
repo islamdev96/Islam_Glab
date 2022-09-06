@@ -24,10 +24,14 @@ class HomeMobile extends StatelessWidget {
                     backgroundColor: Colors.white,
                     radius: MediaQuery.of(context).size.width * 0.4,
                     child: CircleAvatar(
-                        radius: MediaQuery.of(context).size.width * 0.3,
-                        backgroundImage: const AssetImage(
-                          'assets/images/islam3.jpg',
-                        )),
+                      backgroundColor: Colors.white,
+
+                      radius: MediaQuery.of(context).size.width * 0.3,
+                      backgroundImage:
+                          const AssetImage('assets/images/islam3.jpg'),
+
+                      // SvgPicture.asset('assets/images/islam11.svg'),
+                    ),
                   ),
                 ),
                 SizedBox(

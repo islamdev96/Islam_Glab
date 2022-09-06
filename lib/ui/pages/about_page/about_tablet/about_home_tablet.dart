@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import
+// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -12,7 +12,6 @@ import '../../../shared/social_media.dart';
 class AboutHomeTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
     return CenterdedWidget(
       child: Container(
         child: Column(
@@ -62,7 +61,7 @@ class AboutHomeTablet extends StatelessWidget {
                 ),
               ],
             ),
-            BodyPage(),
+            const BodyPage(),
             const AllSocialMedia(),
           ],
         ),

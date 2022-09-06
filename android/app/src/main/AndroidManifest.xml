@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.islam_sayed">
    <application
-        android:label="islam_sayed"
+        android:label="Islam Glab"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

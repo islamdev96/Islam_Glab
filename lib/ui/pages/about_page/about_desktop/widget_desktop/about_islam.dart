@@ -1,15 +1,12 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 class AboutIslam extends StatelessWidget {
   const AboutIslam({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
-
     return Container(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

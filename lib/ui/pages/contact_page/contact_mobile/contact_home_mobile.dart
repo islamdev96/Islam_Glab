@@ -15,7 +15,6 @@ import 'widget_mobile/title_mobile.dart';
 class ContactHomeMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
     return CenterdedWidget(
       child: Container(
         child: Column(
