@@ -25,7 +25,7 @@ class ContactHomeMobile extends StatelessWidget {
             titleHederMobile(),
             CardTextMobile(
               text:
-                  'You can create  website, desktop and  an application mobile (Android & iOS ) , Start your project now , All this with just one code This makes your application complete and fast and easy to maintain and update , All this at very low prices and with high quality and speed .',
+                  'You can create a website, desktop, and  an application mobile (Android & iOS ), Start your project now, All this with just one code This makes your application complete and fast and easy to maintain and update, All this at a very low price and with high quality and speed .',
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.2,

@@ -26,7 +26,7 @@ class TextButtonLogo extends StatelessWidget {
                     : MediaQuery.of(context).size.width * 0.07,
       ),
       label: Text(
-        'ISLAM SAYED',
+        'ISLAM GLAB',
         style: TextStyle(
           color: const Color(0xFFF66C0A),
           fontSize: deviceType == DeviceScreenType.mobile
