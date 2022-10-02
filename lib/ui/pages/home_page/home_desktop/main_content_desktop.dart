@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import
+// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import, unused_local_variable
 
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';

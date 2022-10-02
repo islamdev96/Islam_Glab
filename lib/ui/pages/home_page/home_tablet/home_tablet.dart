@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, unused_local_variable, avoid_unnecessary_containers
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';

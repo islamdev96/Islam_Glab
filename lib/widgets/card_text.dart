@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -14,7 +16,7 @@ class CardText extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Container(
+        SizedBox(
           width: deviceType == DeviceScreenType.mobile
               ? MediaQuery.of(context).size.width * 1
               : deviceType == DeviceScreenType.desktop

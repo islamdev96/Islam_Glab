@@ -1,7 +1,7 @@
+// ignore_for_file: unused_import, implementation_imports
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/basic.dart';
 import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import '../../ui/shared/Sized_box_respo.dart';
 import '../card_title.dart';

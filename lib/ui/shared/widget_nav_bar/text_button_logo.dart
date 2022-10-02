@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islam_sayed/ui/shared/widget_nav_bar/constants.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../pages/home_page/home_page.dart';
@@ -16,7 +17,7 @@ class TextButtonLogo extends StatelessWidget {
       },
       icon: Icon(
         Icons.auto_stories,
-        color: const Color(0xFFF66C0A),
+        color: kPrimaryColor2,
         size: deviceType == DeviceScreenType.mobile
             ? MediaQuery.of(context).size.width * 0.07
             : deviceType == DeviceScreenType.desktop
@@ -28,7 +29,7 @@ class TextButtonLogo extends StatelessWidget {
       label: Text(
         'ISLAM GLAB',
         style: TextStyle(
-          color: const Color(0xFFF66C0A),
+          color: kPrimaryColor2,
           fontSize: deviceType == DeviceScreenType.mobile
               ? MediaQuery.of(context).size.width * 0.055
               : deviceType == DeviceScreenType.desktop

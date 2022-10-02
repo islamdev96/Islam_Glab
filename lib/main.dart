@@ -10,6 +10,8 @@ import 'ui/pages/contact_page/contact_page.dart';
 import 'widgets/drawer_widget.dart';
 
 void main() {
+  // ignore_for_file: annotate_overrides
+
   runApp(
     DevicePreview(
       enabled: !kReleaseMode,

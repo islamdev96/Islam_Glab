@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

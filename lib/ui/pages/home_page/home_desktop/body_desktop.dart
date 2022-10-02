@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers, unused_local_variable
+
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 

@@ -1,3 +1,5 @@
+// ignore_for_file: annotate_overrides
+
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
