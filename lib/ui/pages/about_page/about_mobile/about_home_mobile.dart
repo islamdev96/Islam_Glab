@@ -14,56 +14,53 @@ import '../../../shared/social_media.dart';
 class AboutHomeMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return CenterdedWidget(
-      child: Container(
-        child: Column(
-          children: [
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.04,
-            ),
-            Column(
-              children: [
-                CardTitle(
-                  title: 'About me',
-                ),
-                CardText(
-                  text:
-                      'I am a flutter software developer, with strong flutter and dart skills, and a good understanding of data structure and algorithms.  Moreover, I have knowledge of Networks and good research skills to solve problems.',
-                ),
-              ],
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.06,
-            ),
-            Column(
-              children: [
-                CardTitle(
-                  title: 'what I do',
-                ),
-                CardText(
-                  text:
-                      'I am working in the field of software development. I Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.',
-                ),
-              ],
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.06,
-            ),
-            Column(
-              children: [
-                CardTitle(
-                  title: 'Education ',
-                ),
-                CardText(
-                  text:
-                      'Graduated with a Bachelor\'s degree in Accounting Faculty of Commerce, Cairo University, Egypt',
-                ),
-              ],
-            ),
-            const BodyPage(),
-            const AllSocialMedia(),
-          ],
-        ),
+    return Container(
+      child: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.04,
+          ),
+          Column(
+            children: [
+              CardTitle(
+                title: 'About me',
+              ),
+              CardText(
+                text:
+                    'I am a flutter software developer, with strong flutter and dart skills, and a good understanding of data structure and algorithms.  Moreover, I have knowledge of Networks and good research skills to solve problems.',
+              ),
+            ],
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.06,
+          ),
+          Column(
+            children: [
+              CardTitle(
+                title: 'what I do',
+              ),
+              CardText(
+                text:
+                    'I am working in the field of software development. I Build, test, and deploy beautiful mobile, web, desktop, and embedded apps from a single codebase.',
+              ),
+            ],
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.06,
+          ),
+          Column(
+            children: [
+              CardTitle(
+                title: 'Education ',
+              ),
+              CardText(
+                text:
+                    'Graduated with a Bachelor\'s degree in Accounting Faculty of Commerce, Cairo University, Egypt',
+              ),
+            ],
+          ),
+          const BodyPage(),
+        ],
       ),
     );
   }

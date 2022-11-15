@@ -14,21 +14,15 @@ class MainContentMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var deviceType = getDeviceType(MediaQuery.of(context).size);
-    return CenterdedWidget(
-      child: Container(
-        child: Column(
-          children: [
-            HomeMobile(),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.1,
-            ),
-            const BodyMobile(),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.26,
-            ),
-            const AllSocialMedia(),
-          ],
-        ),
+    return Container(
+      child: Column(
+        children: [
+          HomeMobile(),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.1,
+          ),
+          const BodyMobile(),
+        ],
       ),
     );
   }

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:islam_sayed/ui/pages/about_page/about_page.dart';
 import 'package:islam_sayed/ui/pages/contact_page/contact_page.dart';
+import 'package:islam_sayed/ui/shared/center_widget.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../widgets/drawer_widget.dart';
@@ -46,35 +47,37 @@ class HomePage extends StatelessWidget {
               ],
             )
           : null,
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            deviceType == DeviceScreenType.desktop
-                ? NavBarWidget()
-                : deviceType == DeviceScreenType.tablet
-                    ? NavBarWidget()
-                    : Container(
-                        height: 0,
-                      ),
-            ResponsiveBuilder(
-              builder: (context, sizingInformation) {
-                if (sizingInformation.deviceScreenType ==
-                    DeviceScreenType.mobile) {
-                  return MainContentMobile();
-                } else if (sizingInformation.deviceScreenType ==
-                    DeviceScreenType.desktop) {
-                  return MainContentDesktop();
-                } else if (sizingInformation.deviceScreenType ==
-                    DeviceScreenType.tablet) {
-                  return MainContentTablet();
-                } else {
-                  return MainContentMobile();
-                }
-              },
-            ),
-            AboutPage(),
-            ContactPage(),
-          ],
+      body: CenterdedWidget(
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              deviceType == DeviceScreenType.desktop
+                  ? NavBarWidget()
+                  : deviceType == DeviceScreenType.tablet
+                      ? NavBarWidget()
+                      : Container(
+                          height: 0,
+                        ),
+              ResponsiveBuilder(
+                builder: (context, sizingInformation) {
+                  if (sizingInformation.deviceScreenType ==
+                      DeviceScreenType.mobile) {
+                    return MainContentMobile();
+                  } else if (sizingInformation.deviceScreenType ==
+                      DeviceScreenType.desktop) {
+                    return MainContentDesktop();
+                  } else if (sizingInformation.deviceScreenType ==
+                      DeviceScreenType.tablet) {
+                    return MainContentTablet();
+                  } else {
+                    return MainContentMobile();
+                  }
+                },
+              ),
+              AboutPage(),
+              ContactPage(),
+            ],
+          ),
         ),
       ),
     );

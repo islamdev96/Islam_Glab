@@ -129,10 +129,6 @@ class AboutHomeDesktop extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.2,
             ),
             const Ex(),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01,
-            ),
-            const AllSocialMedia(),
           ],
         ),
       ),

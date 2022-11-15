@@ -12,23 +12,17 @@ class MainContentDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var deviceType = getDeviceType(MediaQuery.of(context).size);
-    return CenterdedWidget(
-      child: Column(
-        children: [
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.2,
-          ),
-          HomeDesktop(),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.5,
-          ),
-          const BodyDesktop(),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.5,
-          ),
-          const AllSocialMedia(),
-        ],
-      ),
+    return Column(
+      children: [
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.2,
+        ),
+        HomeDesktop(),
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.5,
+        ),
+        const BodyDesktop(),
+      ],
     );
   }
 }

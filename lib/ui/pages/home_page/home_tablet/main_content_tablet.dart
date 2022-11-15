@@ -14,21 +14,15 @@ class MainContentTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var deviceType = getDeviceType(MediaQuery.of(context).size);
-    return CenterdedWidget(
-      child: Container(
-        child: Column(
-          children: [
-            HomeTablet(),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.1,
-            ),
-            const BodyTablet(),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.1,
-            ),
-            const AllSocialMedia(),
-          ],
-        ),
+    return Container(
+      child: Column(
+        children: [
+          HomeTablet(),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.1,
+          ),
+          const BodyTablet(),
+        ],
       ),
     );
   }
