@@ -4,8 +4,10 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+// ignore: must_be_immutable
 class CardTextTablet extends StatelessWidget {
   CardTextTablet({
+    super.key,
     required this.text,
   });
   String text;

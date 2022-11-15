@@ -1,9 +1,10 @@
+// ignore_for_file: must_be_immutable, camel_case_types
+
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 class textDesktop extends StatelessWidget {
-  textDesktop({required this.text});
+  textDesktop({super.key, required this.text});
 
   String text;
 

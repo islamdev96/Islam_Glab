@@ -17,7 +17,6 @@ import 'widget_desktop/title_desktop.dart';
 class AboutHomeDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
     return CenterdedWidget(
       child: Container(
         child: Column(

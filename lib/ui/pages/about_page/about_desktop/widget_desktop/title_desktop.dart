@@ -1,17 +1,16 @@
+// ignore_for_file: must_be_immutable, camel_case_types
+
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 class titleDesktop extends StatelessWidget {
-  titleDesktop({required this.title});
+  titleDesktop({super.key, required this.title});
 
   String title;
 
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
-
-    return Container(
+    return SizedBox(
       height: MediaQuery.of(context).size.height * 0.5,
       width: MediaQuery.of(context).size.width * 0.09,
       child: AutoSizeText(

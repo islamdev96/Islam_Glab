@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 class CardTextMobile extends StatelessWidget {
   CardTextMobile({
+    super.key,
     required this.text,
   });
   String text;
@@ -14,7 +15,7 @@ class CardTextMobile extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Container(
+        SizedBox(
           width: MediaQuery.of(context).size.width * 1,
           child: Card(
             elevation: 0,

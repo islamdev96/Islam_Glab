@@ -6,6 +6,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 class CardText extends StatelessWidget {
   CardText({
+    super.key,
     required this.text,
   });
   String text;

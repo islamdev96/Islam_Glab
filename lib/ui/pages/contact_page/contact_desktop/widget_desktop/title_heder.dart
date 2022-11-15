@@ -1,15 +1,12 @@
-// ignore_for_file: avoid_unnecessary_containers
+// ignore_for_file: avoid_unnecessary_containers, camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
 class titleHeder extends StatelessWidget {
   const titleHeder({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var deviceType = getDeviceType(MediaQuery.of(context).size);
-
     return Container(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

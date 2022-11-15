@@ -1,6 +1,8 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+import 'package:islam_sayed/ui/pages/about_page/about_page.dart';
+import 'package:islam_sayed/ui/pages/contact_page/contact_page.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../widgets/drawer_widget.dart';
@@ -70,6 +72,8 @@ class HomePage extends StatelessWidget {
                 }
               },
             ),
+            AboutPage(),
+            ContactPage(),
           ],
         ),
       ),
