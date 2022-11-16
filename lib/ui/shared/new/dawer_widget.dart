@@ -25,7 +25,7 @@ class DrawerWidget extends StatelessWidget {
                 backgroundColor: Colors.white,
                 radius: MediaQuery.of(context).size.width * 0.15,
                 backgroundImage: const AssetImage(
-                  'assets/images/islam/9.jpg',
+                  'assets/images/islam/islam3.png',
                 ),
               ),
             ),
@@ -35,7 +35,7 @@ class DrawerWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
-              height: size.height * 0.05,
+              height: size.height * 0.03,
             ),
             const ElevatedButtonWidget(
               color: kNavBarColor,
@@ -74,6 +74,15 @@ class DrawerWidget extends StatelessWidget {
               color: Color(0xFFE10A43),
               link: 'https://api.whatsapp.com/send?phone=201065807020',
               text: '01065807020',
+            ),
+            SizedBox(
+              height: size.height * 0.03,
+            ),
+            const ElevatedButtonWidget(
+              color: kNavBarColor,
+              link:
+                  'https://drive.google.com/file/d/1fv2DB5rVdFk6s8a9NTOv7QKYrCQKT5XA/view?usp=share_link',
+              text: 'Download CV',
             ),
           ],
         ),

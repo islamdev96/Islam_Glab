@@ -1,8 +1,10 @@
-// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import
+// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:islam_sayed/ui/pages/contact_page/contact_mobile/widget_mobile/card_text_mobile.dart';
+import 'package:islam_sayed/ui/shared/widget_nav_bar/constants.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../widgets/card_text.dart';
 import '../../../../widgets/card_title.dart';
@@ -17,9 +19,7 @@ class ContactHomeMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: MediaQuery.of(context).size.height * 0.06,
-        ),
+        // ),
         const titleHederMobile(),
         CardTextMobile(
           text:
@@ -29,13 +29,57 @@ class ContactHomeMobile extends StatelessWidget {
           height: MediaQuery.of(context).size.height * 0.2,
         ),
         Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CardTitle(
               title: 'Contact us via',
             ),
-            CardText(
-              text:
-                  'Email :  \nislamsayedbayoumi@gmail.com  \n\n\nWhatsApp :  \n+201065807020 .',
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.08,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: InkWell(
+                // ignore: deprecated_member_use
+                onTap: () => launch(
+                    'https://play.google.com/store/apps/developer?id=ISLAM+SAYED'),
+                child: const Text(
+                  'Google Play',
+                  style: TextStyle(
+                    color: kNavBarColor,
+                    fontSize: 25,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: InkWell(
+                onTap: () =>
+                    launch('https://api.whatsapp.com/send?phone=201065807020'),
+                child: const Text(
+                  'WhatsApp :  \n01065807020 ',
+                  style: TextStyle(
+                    color: kNavBarColor,
+                    fontSize: 25,
+                  ),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: InkWell(
+                // ignore: deprecated_member_use
+
+                child: Text(
+                  'Email :  islamsayedbayoumi@gmail.com ',
+                  style: TextStyle(
+                    color: kNavBarColor,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

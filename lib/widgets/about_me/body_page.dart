@@ -57,10 +57,10 @@ class BodyPage extends StatelessWidget {
         ),
         const SkillsAboutWidget(),
         const SizedBoxRespo(
-          mobile: 0.4,
-          desktop: 0.3,
-          tablet: 0.5,
-          else1: 0.05,
+          mobile: 0.2,
+          desktop: 0.2,
+          tablet: 0.3,
+          else1: 0.3,
         ),
       ],
     );

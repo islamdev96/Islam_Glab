@@ -61,7 +61,7 @@ class _AllSocialMediaState extends State<AllSocialMedia> {
               CategorySvg(
                 svg: 'assets/images/soshal/play.svg',
                 launchurl:
-                    'https://play.google.com/store/apps/details?id=com.islamdev.socialMedia',
+                    'https://play.google.com/store/apps/developer?id=ISLAM+SAYED',
               ),
               CategorySvg(
                 svg: 'assets/images/soshal/whatsapp.svg',

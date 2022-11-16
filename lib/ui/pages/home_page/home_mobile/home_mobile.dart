@@ -5,11 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../../../shared/new/elevated_button_widget.dart';
+import '../../../shared/widget_nav_bar/constants.dart';
+
 class HomeMobile extends StatelessWidget {
   static const routeName = '/';
   @override
   Widget build(BuildContext context) {
     var deviceType = getDeviceType(MediaQuery.of(context).size);
+    Size size = MediaQuery.of(context).size;
+
     return Container(
       child: Column(
         children: <Widget>[
@@ -52,6 +57,15 @@ class HomeMobile extends StatelessWidget {
                       color: Colors.grey[700],
                       fontSize: MediaQuery.of(context).size.height * 0.019,
                     ),
+                  ),
+                  SizedBox(
+                    height: size.height * 0.1,
+                  ),
+                  const ElevatedButtonWidget(
+                    color: kNavBarColor,
+                    link:
+                        'https://drive.google.com/file/d/1fv2DB5rVdFk6s8a9NTOv7QKYrCQKT5XA/view?usp=share_link',
+                    text: 'Download CV',
                   ),
                 ],
               ),
