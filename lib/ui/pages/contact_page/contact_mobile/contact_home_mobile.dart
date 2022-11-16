@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import, deprecated_member_use
+// ignore_for_file: use_key_in_widget_constructors, sized_box_for_whitespace, unused_import, deprecated_member_use, duplicate_ignore
 
 import 'package:flutter/material.dart';
 import 'package:islam_sayed/ui/pages/contact_page/contact_mobile/widget_mobile/card_text_mobile.dart';
