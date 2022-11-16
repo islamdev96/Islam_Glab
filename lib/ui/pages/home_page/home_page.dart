@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:islam_sayed/ui/pages/about_page/about_page.dart';
 import 'package:islam_sayed/ui/pages/contact_page/contact_page.dart';
 import 'package:islam_sayed/ui/shared/center_widget.dart';
+import 'package:islam_sayed/ui/shared/new/dawer_widget.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-import '../../../widgets/drawer_widget.dart';
+import '../../shared/widget_nav_bar/constants.dart';
 import '../../shared/widget_nav_bar/nav_bar.dart';
 import '../../shared/widget_nav_bar/text_button_logo.dart';
 import 'home_desktop/main_content_desktop.dart';
@@ -20,9 +21,15 @@ class HomePage extends StatelessWidget {
     var deviceType = getDeviceType(MediaQuery.of(context).size);
     return Scaffold(
       backgroundColor: Colors.white,
+      drawer: const Center(
+        child: Drawer(
+          backgroundColor: kPrimaryColor2,
+          elevation: 11,
+          child: DrawerWidget(),
+        ),
+      ),
       appBar: deviceType == DeviceScreenType.mobile
           ? AppBar(
-              backgroundColor: Colors.white,
               elevation: 0,
               toolbarHeight: MediaQuery.of(context).size.height * 0.08,
               actions: [
@@ -30,21 +37,11 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.3,
                 ),
-                Padding(
-                  padding:
-                      EdgeInsets.all(MediaQuery.of(context).size.width * 0.03),
-                  child: IconButton(
-                    icon: const Icon(
-                      Icons.menu,
-                      color: Color(0xFFF66C0A),
-                    ),
-                    onPressed: () {
-                      Navigator.of(context)
-                          .pushReplacementNamed(DrawerWidget.routeName);
-                    },
-                  ),
-                ),
               ],
+              backgroundColor: kPrimaryColor2,
+              iconTheme: const IconThemeData(
+                color: kNavBarColor,
+              ),
             )
           : null,
       body: CenterdedWidget(

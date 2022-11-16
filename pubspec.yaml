@@ -28,15 +28,12 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   auto_size_text: ^3.0.0
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  carousel_slider: ^4.1.1
   cupertino_icons: ^1.0.2
   device_preview: null
   flutter:
     sdk: flutter
-  
-  flutter_svg: 
+  flutter_svg: null
   google_fonts: ^3.0.1
   rename: ^2.0.1
   responsive_builder: null
@@ -44,10 +41,10 @@ dependencies:
   url_launcher: ^6.1.5
 
 dev_dependencies:
+  flutter_launcher_icons: "^0.10.0"
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.10.0"
 
 flutter_icons:
   android: true
@@ -78,6 +75,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/soshal/
+    - assets/images/islam/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

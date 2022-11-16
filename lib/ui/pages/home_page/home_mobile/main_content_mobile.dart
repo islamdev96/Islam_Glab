@@ -6,6 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../shared/center_widget.dart';
+import '../../../shared/new/carousel_slider.dart';
+import '../../../shared/new/header_with_icons.dart';
 import '../../../shared/social_media.dart';
 import 'body_mobile.dart';
 import 'home_mobile.dart';
@@ -18,6 +20,20 @@ class MainContentMobile extends StatelessWidget {
       child: Column(
         children: [
           HomeMobile(),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.1,
+          ),
+          deviceType == DeviceScreenType.mobile ||
+                  deviceType == DeviceScreenType.tablet
+              ? Column(
+                  children: const [
+                    // HeaderWithIcons(),
+                    CarouselSlider2(), // HeaderWithImages(),
+                  ],
+                )
+              : Container(
+                  height: 0,
+                ),
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.1,
           ),

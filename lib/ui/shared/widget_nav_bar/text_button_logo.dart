@@ -17,7 +17,7 @@ class TextButtonLogo extends StatelessWidget {
       },
       icon: Icon(
         Icons.auto_stories,
-        color: kPrimaryColor2,
+        color: kNavBarColor,
         size: deviceType == DeviceScreenType.mobile
             ? MediaQuery.of(context).size.width * 0.07
             : deviceType == DeviceScreenType.desktop
@@ -29,7 +29,7 @@ class TextButtonLogo extends StatelessWidget {
       label: Text(
         'ISLAM GLAB',
         style: TextStyle(
-          color: kPrimaryColor2,
+          color: kNavBarColor,
           fontSize: deviceType == DeviceScreenType.mobile
               ? MediaQuery.of(context).size.width * 0.055
               : deviceType == DeviceScreenType.desktop

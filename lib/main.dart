@@ -4,10 +4,10 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:islam_sayed/ui/pages/home_page/home_page.dart';
+import 'package:islam_sayed/ui/shared/new/dawer_widget.dart';
 
 import 'ui/pages/about_page/about_page.dart';
 import 'ui/pages/contact_page/contact_page.dart';
-import 'widgets/drawer_widget.dart';
 
 void main() {
   // ignore_for_file: annotate_overrides
@@ -38,7 +38,7 @@ class IslamWeb extends StatelessWidget {
         HomePage.routeName: (_) => HomePage(),
         AboutPage.routeName: (_) => AboutPage(),
         ContactPage.routeName: (_) => ContactPage(),
-        DrawerWidget.routeName: (_) => DrawerWidget(),
+        DrawerWidget.routeName: (_) => const DrawerWidget(),
       },
     );
   }

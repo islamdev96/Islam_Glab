@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:islam_sayed/ui/shared/widget_nav_bar/constants.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../pages/about_page/about_page.dart';
@@ -15,7 +16,7 @@ class NavBarWidget extends StatelessWidget {
     var deviceType = getDeviceType(MediaQuery.of(context).size);
 
     return Container(
-      color: Colors.white10,
+      color: kNavBarColor,
       padding: const EdgeInsets.symmetric(horizontal: 80),
       height: deviceType == DeviceScreenType.mobile
           ? MediaQuery.of(context).size.height * 0.1

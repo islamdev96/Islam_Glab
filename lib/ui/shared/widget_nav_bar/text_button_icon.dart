@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:islam_sayed/ui/shared/widget_nav_bar/constants.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class TextButtonWidget extends StatelessWidget {
@@ -16,7 +17,7 @@ class TextButtonWidget extends StatelessWidget {
     return Text(
       title,
       style: TextStyle(
-        color: const Color(0xFFF66C0A),
+        color: kNavBarColor,
         fontSize: deviceType == DeviceScreenType.mobile
             ? MediaQuery.of(context).size.width * 0.055
             : deviceType == DeviceScreenType.desktop
