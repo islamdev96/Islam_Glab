@@ -40,7 +40,7 @@ class DrawerWidget extends StatelessWidget {
             const ElevatedButtonWidget(
               color: kNavBarColor,
               link:
-                  'https://play.google.com/store/apps/details?id=com.islamdev.socialMedia',
+                  'https://play.google.com/store/apps/developer?id=ISLAM+SAYED',
               text: 'Google Play',
             ),
             SizedBox(

@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:url_launcher/url_launcher.dart';
+
+import '../../../model/launch_url.dart';
 
 class ElevatedButtonWidget extends StatelessWidget {
   const ElevatedButtonWidget(
@@ -18,7 +19,9 @@ class ElevatedButtonWidget extends StatelessWidget {
     return Column(
       children: [
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            launchURL(link);
+          },
           focusNode: FocusNode(),
           autofocus: true,
           style: ButtonStyle(
@@ -36,7 +39,7 @@ class ElevatedButtonWidget extends StatelessWidget {
             ),
           ),
           child: InkWell(
-            onTap: () => launch(link),
+            // onTap: () => launch(link),
             child: Text(
               text,
               style: TextStyle(
