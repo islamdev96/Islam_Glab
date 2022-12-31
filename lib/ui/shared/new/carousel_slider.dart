@@ -47,8 +47,8 @@ class CarouselSlider2 extends StatelessWidget {
         aspectRatio: 16 / 9,
         autoPlayCurve: Curves.fastOutSlowIn,
         enableInfiniteScroll: true,
-        // autoPlayInterval: const Duration(seconds: 1),
-        autoPlayAnimationDuration: const Duration(milliseconds: 3000),
+        autoPlayInterval: const Duration(seconds: 2),
+        autoPlayAnimationDuration: const Duration(milliseconds: 2000),
         viewportFraction: 0.8,
       ),
     );

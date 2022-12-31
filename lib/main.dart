@@ -27,7 +27,7 @@ class IslamWeb extends StatelessWidget {
       locale: DevicePreview.locale(context), // Add the locale here
       builder: DevicePreview.appBuilder, // Add the builder here
 
-      title: 'Flutter Demo',
+      title: 'Islam Glab',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
