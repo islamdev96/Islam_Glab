@@ -139,7 +139,7 @@ class HeaderWithIcons extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: IconButton(
                       icon: Icon(
-                        Icons.whatsapp,
+                        Icons.whatshot,
                         color: kBackgroundColor,
                         textDirection: TextDirection.rtl,
                         size: deviceType == DeviceScreenType.mobile
